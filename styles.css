@@ -7,7 +7,7 @@
   
   body {
     font-family: 'Poppins', sans-serif;
-    background-color: #F1FAEE;  /* Light Mint Background */
+    background-color: #ffffff;  /* Light Mint Background */
     color: #333;
     line-height: 1.6;
   }
@@ -74,7 +74,6 @@
   }
   
   .project-grid {
-    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 40px;
