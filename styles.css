@@ -55,6 +55,7 @@
   
   /* Section Styles */
   .section {
+    diplay:
     padding: 60px 0;
     background-color: white;
     text-align: center;
@@ -74,7 +75,6 @@
   }
   
   .project-grid {
-    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 40px;
