@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazem Ahmed</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon-32x32.png">
+    <meta name="theme-color" content="#1f2937">
+</head>
+<body class="bg-gray-900 text-gray-200 antialiased">
+
+    <nav id="navbar" class="bg-gray-800/80 backdrop-blur-md shadow-lg fixed w-full top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-sky-400 hover:text-sky-300 transition-colors">Hazem Ahmed</a>
+            <div class="hidden md:flex space-x-4">
+                <a href="#home" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors">About</a>
+                <a href="#projects" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors">Projects</a>
+                <a href="#skills" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors">Skills</a>
+                <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 shadow-xl">
+            <a href="#home" class="block text-gray-300 hover:text-sky-400 hover:bg-gray-700 px-6 py-3 transition-colors">Home</a>
+            <a href="#about" class="block text-gray-300 hover:text-sky-400 hover:bg-gray-700 px-6 py-3 transition-colors">About</a>
+            <a href="#projects" class="block text-gray-300 hover:text-sky-400 hover:bg-gray-700 px-6 py-3 transition-colors">Projects</a>
+            <a href="#skills" class="block text-gray-300 hover:text-sky-400 hover:bg-gray-700 px-6 py-3 transition-colors">Skills</a>
+            <a href="#contact" class="block text-gray-300 hover:text-sky-400 hover:bg-gray-700 px-6 py-3 transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="section bg-gradient-to-br from-slate-800 via-gray-900 to-black text-white flex items-center justify-center pt-20 md:pt-24">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto">
+                <img src="images/me.jpeg" alt="Your Name" class="w-48 h-48 md:w-56 md:h-56 mx-auto rounded-full object-cover shadow-2xl border-4 border-sky-500 mb-8 fade-in" >
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 fade-in" style="animation-delay: 0.2s;">Hi, I'm Hazem Ahmed</h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 fade-in" style="animation-delay: 0.4s;">
+                    A passionate Software Engineer who is curious about trying new things and learning new skills.
+                </p>
+                <a href="#projects" class="bg-sky-500 text-white font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-sky-600 transition-all duration-300 transform hover:scale-105 fade-in" style="animation-delay: 0.6s;">
+                    View My Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-100 mb-12 fade-in">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+                <div class="md:w-2/3 fade-in" style="animation-delay: 0.2s;">
+                    <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                        Hello! I'm Hazem Ahmed, A back-end engineer by trade, I'm a perpetual learner at heart  <i class="fas fa-heart text-red-600"></i>
+                         My passion lies in not only building solid and efficient back-end systems but also in constantly 
+                         exploring and experimenting with new technologies and approaches. 
+                         
+                    </p>
+                    <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                        I'm always on the lookout for the next innovative tool or technique to enhance my work and broaden my horizons.
+                        When I'm not coding, I enjoy going to the gym, playing video games, and learning 3D modeling.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        I'm currently seeking opportunities to contribute to innovative projects and grow as a developer.
+                        Let's connect and build something amazing together!😄
+                    </p>
+                </div>
+                <div class="md:w-1/3 flex justify-center fade-in" style="animation-delay: 0.4s;">
+                    <div class="w-64 h-64 bg-sky-600 rounded-lg shadow-lg flex items-center justify-center text-white text-2xl font-semibold">
+                        <i class="fas fa-user-astronaut fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-100 mb-12 fade-in">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden card-hover-effect fade-in" style="animation-delay: 0.2s;">
+                    <img src="images/easyshop.png" alt="Project 1" class="w-full h-48 object-cover" >
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-100 mb-2">Easy Shop</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            A modern e-commerce platform with product browsing, cart functionality, user authentication, and admin panel
+                        </p>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Technologies used: HTML, CSS, JavaScript, Django, Django Rest Framework and SQLite 
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="https://github.com/Hazem-Ahmed-Salem/Market-Website" target="_blank" class="text-sky-400 hover:text-sky-300 font-medium hover:underline">View Project</a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden card-hover-effect fade-in" style="animation-delay: 0.4s;">
+                    <img src="images/autozoma.png" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-100 mb-2">Autozoma</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            AutoZoma is a Django WebApp where you can list your used car for sale and buy used cars from other users.</p>
+                            <p class="text-gray-400 text-sm mb-4">Technologies used: HTML, CSS, JavaScript, Django and SQLite </p>
+                         <div class="flex space-x-3">
+                            <a href="https://github.com/Hazem-Ahmed-Salem/AutoZoma-Django-App" target="_blank" class="text-sky-400 hover:text-sky-300 font-medium hover:underline">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden card-hover-effect fade-in" style="animation-delay: 0.6s;">
+                     <img src="images/API.jpg" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-100 mb-2">Profiles Rest API</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            This is a RESTful API built with Django and Django REST Framework for managing user profiles. It provides endpoints to create, retrieve, update, and delete profiles                        </p>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Technologies used:Django Rest Framework and SQLite                     </p>
+                         <div class="flex space-x-3">
+                            <a href="https://github.com/Hazem-Ahmed-Salem/Profiles-rest-api" target="_blank" class="text-sky-400 hover:text-sky-300 font-medium hover:underline">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-100 mb-12 fade-in">Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-center">
+                <div class="p-6 bg-gray-700 rounded-lg shadow-md card-hover-effect fade-in" style="animation-delay: 0.8s;">
+                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-12 h-12 mx-auto mb-3" />
+                   <h4 class="text-lg font-semibold text-gray-200">Python</h4>
+               </div>
+               
+                <div class="p-6 bg-gray-700 rounded-lg shadow-md card-hover-effect fade-in" style="animation-delay: 0.3s;">
+                    <img src="https://www.svgrepo.com/show/353657/django-icon.svg" alt="Django" class="w-12 h-12 mx-auto mb-3" />
+                    <h4 class="text-lg font-semibold text-gray-200">Django</h4>
+                </div>
+                <div class="p-6 bg-gray-700 rounded-lg shadow-md card-hover-effect fade-in" style="animation-delay: 0.5s;">
+                    <img src="images/FastAPI.svg" 
+                         alt="FastAPI" 
+                         class="w-16 h-16 mx-auto mb-3 object-contain p-1 bg-white rounded" />
+                    <h4 class="text-lg font-semibold text-gray-200">FastAPI</h4>
+                </div>
+                 <div class="p-6 bg-gray-700 rounded-lg shadow-md card-hover-effect fade-in" style="animation-delay: 0.9s;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" class="w-12 h-12 mx-auto mb-3" />
+                    <h4 class="text-lg font-semibold text-gray-200">SQL</h4>
+                </div>
+                <div class="p-6 bg-gray-700 rounded-lg shadow-md card-hover-effect fade-in" style="animation-delay: 0.1s;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-12 h-12 mx-auto mb-3" />
+                    <h4 class="text-lg font-semibold text-gray-200">HTML5</h4>
+                </div>
+                <div class="p-6 bg-gray-700 rounded-lg shadow-md card-hover-effect fade-in" style="animation-delay: 0.2s;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-12 h-12 mx-auto mb-3" />
+                    <h4 class="text-lg font-semibold text-gray-200">CSS3</h4>
+                </div>
+                <div class="p-6 bg-gray-700 rounded-lg shadow-md card-hover-effect fade-in" style="animation-delay: 0.3s;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-12 h-12 mx-auto mb-3" />
+                    <h4 class="text-lg font-semibold text-gray-200">JavaScript</h4>
+                </div>
+                
+                <div class="p-6 bg-gray-700 rounded-lg shadow-md card-hover-effect fade-in" style="animation-delay: 0.6s;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-12 h-12 mx-auto mb-3" />
+                    <h4 class="text-lg font-semibold text-gray-200">Tailwind CSS</h4>
+                </div>
+                <div class="p-6 bg-gray-700 rounded-lg shadow-md card-hover-effect fade-in" style="animation-delay: 0.7s;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-12 h-12 mx-auto mb-3" />
+                    <h4 class="text-lg font-semibold text-gray-200">Git</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-gradient-to-br from-slate-800 via-gray-900 to-black text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 fade-in">Get In Touch</h2>
+            <div class="max-w-lg mx-auto text-center">
+                <p class="text-lg text-gray-300 mb-4 fade-in" style="animation-delay: 0.2s;">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+                    
+                </p>
+                <p class="text-lg text-gray-300 mb-4 fade-in" style="animation-delay: 0.2s;">
+                    Email Me @: hazem.salem.work@gmail.com
+                </p>
+                <p class="text-lg text-gray-300 mb-8 fade-in" style="animation-delay: 0.2s;">
+                    Feel free to reach out!
+                </p>
+                <a href="mailto:hazem.salem.work@gmail.com" class="inline-block bg-sky-500 text-white font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-sky-600 transition-all duration-300 transform hover:scale-105 mb-8 fade-in" style="animation-delay: 0.4s;">
+                    <i class="fas fa-envelope mr-2"></i> Send Me an Email
+                </a>
+                <div class="flex justify-center space-x-6 fade-in" style="animation-delay: 0.6s;">
+                    <a href="https://github.com/Hazem-Ahmed-Salem" target="_blank" class="text-gray-300 hover:text-white transition-colors text-2xl"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/hazem-ahmed-746520264" target="_blank" class="text-gray-300 hover:text-white transition-colors text-2xl"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.hackerrank.com/profile/hazem_salem_work" target="_blank" class="text-gray-300 hover:text-white transition-colors text-2xl"><i class="fab fa-hackerrank"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-gray-400 py-8 text-center">
+        <div class="container mx-auto px-6">
+            <p>&copy; <span id="currentYear"></span> Hazem Ahmed. All rights reserved.</p>
+            <p class="text-sm mt-1">Designed with <i class="fas fa-heart text-sky-500"></i> using Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" class="hidden fixed bottom-5 right-5 bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-4 rounded-full shadow-lg transition-opacity duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
