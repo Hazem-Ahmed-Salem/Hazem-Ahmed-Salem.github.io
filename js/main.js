@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Navbar elements
+    const navbar = document.getElementById('navbar');
+    let lastScroll = 0;
+    const navbarHeight = navbar.offsetHeight;
+
     // Mobile menu toggle
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -38,17 +43,42 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Scroll to top button
     const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-    const navbar = document.getElementById('navbar');
 
     function handleScroll() {
-        // Navbar style change on scroll
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            navbar.classList.add('py-2', 'shadow-xl');
-            navbar.classList.remove('py-3');
-        } else {
+        const currentScroll = window.pageYOffset;
+        
+        // Navbar show/hide on scroll
+        if (currentScroll <= 0) {
+            navbar.classList.remove('scrolled-down', 'scrolled-up');
             navbar.classList.add('py-3');
             navbar.classList.remove('py-2', 'shadow-xl');
+            lastScroll = currentScroll;
+            return;
         }
+        
+        if (currentScroll > lastScroll && !navbar.classList.contains('scrolled-down')) {
+            // Scroll down - hide navbar
+            navbar.classList.remove('scrolled-up');
+            navbar.classList.add('scrolled-down');
+            navbar.style.transform = `translateY(-${navbarHeight}px)`;
+        } else if (currentScroll < lastScroll && (navbar.classList.contains('scrolled-down') || currentScroll < lastScroll - 5)) {
+            // Scroll up - show navbar
+            navbar.classList.remove('scrolled-down');
+            navbar.classList.add('scrolled-up');
+            navbar.style.transform = 'translateY(0)';
+            
+            // Add shadow when scrolled down
+            if (currentScroll > 50) {
+                navbar.classList.add('shadow-xl');
+                navbar.classList.add('py-2');
+                navbar.classList.remove('py-3');
+            } else {
+                navbar.classList.add('py-3');
+                navbar.classList.remove('py-2', 'shadow-xl');
+            }
+        }
+        
+        lastScroll = currentScroll;
 
         // Scroll to top button visibility
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
